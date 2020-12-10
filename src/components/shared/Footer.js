@@ -1,16 +1,19 @@
 import React from 'react'
-import {Typography, Grid, Button} from '@material-ui/core'
+import {Typography, Grid} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 
+
+import AppLogo from '../assets/Icons/AppStore.png';
 
 const useStyles = makeStyles({
     container:{
         width: '100vw',
         backgroundColor: '#312E2D',
+        padding: '2em 0'
     },
 
     wrapper:{
-        width: '70%',
+        width: '100%',
     },
 
     gridContainer:{
@@ -19,6 +22,10 @@ const useStyles = makeStyles({
 
     gridItem:{
         color: '#FFF',
+    },
+
+    appLogoImage:{
+        height: '7em',
     },
 
 });
@@ -47,23 +54,23 @@ export default function NavigationBar() {
                         className={classes.gridItem}
                         xs={12}
                         sm={4}
-                        md={4}
+                        md={2}
                     >
                         <div className={classes.headerDiv}>
                             <Typography variant='h6' className={classes.header}>
-                                Information
+                                Expedition
                             </Typography>
                         </div>
 
                         <div className={classes.subHeaderDiv}>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 1
+                                Package 1
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 2
+                                Package 2
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 3
+                                Package 3
                             </Typography>
 
                         </div>
@@ -76,7 +83,7 @@ export default function NavigationBar() {
                         className={classes.gridItem}
                         xs={12}
                         sm={4}
-                        md={4}
+                        md={2}
                     >
                         <div className={classes.headerDiv}>
                             <Typography variant='h6' className={classes.header}>
@@ -86,13 +93,13 @@ export default function NavigationBar() {
 
                         <div className={classes.subHeaderDiv}>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 1
+                                Expedition
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 2
+                                About 
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 3
+                               Contact
                             </Typography>
 
                         </div>
@@ -105,7 +112,7 @@ export default function NavigationBar() {
                         className={classes.gridItem}
                         xs={12}
                         sm={4}
-                        md={4}
+                        md={2}
                     >
                         <div className={classes.headerDiv}>
                             <Typography variant='h6' className={classes.header}>
@@ -115,18 +122,59 @@ export default function NavigationBar() {
 
                         <div className={classes.subHeaderDiv}>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 1
+                                Mount Everest   
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 2
+                                Mount K2
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Mountain 3
+                                Mount Mayon
                             </Typography>
 
                         </div>
 
                     </Grid>
+
+
+
+                    <Grid 
+                        item
+                        className={classes.gridItem}
+                        xs={12}
+                        sm={4}
+                        md={2}
+                    >
+                        <div className={classes.headerDiv}>
+                            <Typography variant='h6' className={classes.header}>
+                                Blog
+                            </Typography>
+                        </div>
+
+                        <div className={classes.subHeaderDiv}>
+                            <Typography variant='body1' className={classes.subHeader}>
+                                Blog
+                            </Typography>
+                            <Typography variant='body1' className={classes.subHeader}>
+                                Content
+                            </Typography>
+                        </div>
+
+                    </Grid>
+
+
+                    <Grid 
+                        item
+                        className={classes.gridItem}
+                        xs={12}
+                        sm={4}
+                        md={2}
+                    >
+                        <div className={classes.headerDiv}>
+                            <img src={AppLogo} className={classes.appLogoImage} alt='App Logo' />
+                        </div>
+
+                    </Grid>
+
 
 
 
