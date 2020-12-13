@@ -42,6 +42,14 @@ const useStyles = makeStyles({
         textAlign: 'center',
     },
 
+    header:{
+        fontFamily: 'Mont-Bold', 
+    },
+
+    subHeader:{
+        fontFamily: 'Mont-SemiBold', 
+    },
+
     btnContainer:{
         marginTop: '2em',
     },
@@ -51,6 +59,7 @@ const useStyles = makeStyles({
         border: '1px white solid',
         borderRadius: '0.5em',
         margin: '0 1em',
+        fontFamily: 'Mont-Bold', 
         
         '&:hover':{
             backgroundColor: '#FFF',
@@ -65,6 +74,7 @@ const useStyles = makeStyles({
         borderRadius: '0.5em',
         backgroundColor: '#FF2C70',
         margin: '0 1em',
+        fontFamily: 'Mont-Bold', 
 
         '&:hover':{
             backgroundColor: '#FF2C70',

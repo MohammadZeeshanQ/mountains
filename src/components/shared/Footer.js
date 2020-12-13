@@ -9,7 +9,11 @@ const useStyles = makeStyles({
     container:{
         width: '100vw',
         backgroundColor: '#312E2D',
-        padding: '2em 0'
+        padding: '6em 0',
+
+        '@media (max-width: 600px)':{
+            padding: '1em 0',
+        }
     },
 
     wrapper:{
@@ -26,6 +30,18 @@ const useStyles = makeStyles({
 
     appLogoImage:{
         height: '7em',
+    },
+
+    header:{
+        fontFamily: 'Mont-Bold',
+    },
+
+    subHeaderDiv:{
+        marginTop: '1em',
+    },
+
+    subHeader:{
+        fontFamily: 'Mont-Regular',
     },
 
 });

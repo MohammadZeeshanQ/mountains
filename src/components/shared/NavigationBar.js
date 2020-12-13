@@ -5,24 +5,36 @@ import {AppBar, Toolbar, Typography, Button} from '@material-ui/core'
 const useStyles = makeStyles({
 
     container:{
-        width:'100vw',
-        height: 64,
-        backgroundColor: '#312E2D',
+        width:'100vw',   
     },
 
     wrapper:{
+        width:'100%',
+        backgroundColor: '#312E2D',
+        color: '#FFF',
+        height: 64,
+    },
+
+    centerDiv:{
         width:'70%',
         margin: 'auto',
-        color: '#FFF',
+
+        '@media (max-width: 600px)':{
+            width: '100%',
+        }
     },
 
     nameContainer:{
         flexGrow: 1,
     },
 
+    nameTextBtn:{
+        border: 'none',
+    },
+
     nameText:{
         color: 'white',
-        border: 'none',
+        fontFamily: 'Sans-Bold', 
     },
 
     tabContainer:{
@@ -32,6 +44,7 @@ const useStyles = makeStyles({
     tabText:{
         color: 'white',
         border: 'none',
+        fontFamily: 'Mont-SemiBold', 
 
         '&:hover':{
             transform: 'scale(1.1)',
@@ -50,13 +63,15 @@ export default function NavigationBar() {
     return (
         <div className={classes.container}>
 
-            <AppBar position='sticky' color='transparent' elevation='0' className={classes.wrapper}>
+            <AppBar position='fixed' color='transparent' elevation='0' className={classes.wrapper}>
 
-                <Toolbar>
+                <Toolbar className={classes.centerDiv}>
 
                     <div className={classes.nameContainer}>
-                        <Button variant='outlined' className={classes.nameText}>
-                            Mountainers
+                        <Button variant='outlined' className={classes.nameTextBtn}>
+                            <Typography variant='h6' className={classes.nameText}>
+                                Mountainers
+                            </Typography>
                         </Button>
                     </div>
 

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Mont-Regular;
+  src: url(./components/assets/Font/Montserrat-Regular.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Mont-SemiBold;
+  src: url(./components/assets/Font/Montserrat-Medium.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Mont-Bold;
+  src: url(./components/assets/Font/Montserrat-Bold.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Mont-ExtraBold;
+  src: url(./components/assets/Font/Montserrat-Black.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Sans-Bold;
+  src: url(./components/assets/Font/SourceSansPro-Bold.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Sans-SemiBold;
+  src: url(./components/assets/Font/SourceSansPro-SemiBold.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url(./components/assets/Font/Lobster-Regular.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: SansitaSwashed;
+  src: url(./components/assets/Font/SansitaSwashed-VariableFont_wght.ttf);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
