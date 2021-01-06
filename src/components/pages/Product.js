@@ -1,6 +1,8 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid, Typography, Button } from '@material-ui/core'
+// Icons
+import ShopIcon from '@material-ui/icons/Shop';
 
 
 const expeditionData = [
@@ -116,6 +118,7 @@ const useStyles = makeStyles({
     backgroundColor: '#FF2C70',
     margin: '0 1em',
     fontFamily: 'Mont-Bold', 
+    alignItems: 'center',
 
     '&:hover':{
         backgroundColor: '#FF2C70',
@@ -182,7 +185,11 @@ export default function Product() {
         
                                     <div className={classes.buyButtonDiv}>
                                         <Button className={classes.buyButton} variant='contained'>
-                                            Buy Now
+                                            
+                                            <Typography variant='body2'>
+                                                Buy Now
+                                            </Typography>
+                                            <ShopIcon fontSize='small' />
                                         </Button>
                                     </div>
         
