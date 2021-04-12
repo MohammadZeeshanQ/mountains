@@ -119,7 +119,7 @@ export default function Mount1() {
 
                 <div className={classes.titleDiv}>
 
-                    <Typography variant='h2' className={classes.title} >
+                    <Typography variant='h4' className={classes.title} >
                         Our Mountains
                     </Typography>
 

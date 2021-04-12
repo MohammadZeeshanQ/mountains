@@ -7,22 +7,25 @@ import ShopIcon from '@material-ui/icons/Shop';
 
 const expeditionData = [
     {
-        'productName': 'Expedition 1',
-        'location': 'Everest',
-        'people': '3',
+        'productName': 'Mount Everest',
+        'description': 'Mount Everest is Earths highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas.',
+        'location': 'Nepal',
+        'people': '2',
         'days': '3'
     },
     {
-        'productName': 'Expedition 2',
-        'location': 'K2',
+        'productName': 'Mount K2',
+        'description': 'K2, at 8,611 metres above sea level, is the second-highest mountain on Earth, after Mount Everest.',
+        'location': 'Pakistan',
         'people': '4',
-        'days': '6'
+        'days': '4'
     },
     {
-        'productName': 'Expedition 3',
-        'location': 'Nelio',
+        'productName': 'Mayon Volcano',
+        'description': 'Mayon, also known as Mount Mayon, is an active stratovolcano in the province of Albay in Bicol Region',
+        'location': 'Philippines',
         'people': '5',
-        'days': '15'
+        'days': '8'
     },
 ]
 
@@ -33,8 +36,8 @@ const useStyles = makeStyles({
     {
         width: '100vw',
         padding: ' 5em 0',
-        backgroundColor: 'grey',
-        backgroundImage: 'url(http://bit.ly/2gPLxZ4)',
+        //backgroundColor: 'grey',
+        //backgroundImage: 'url(http://bit.ly/2gPLxZ4)',
         backgroundSize: 'cover',
 
         '@media (max-width: 600px)':{
@@ -52,45 +55,31 @@ const useStyles = makeStyles({
     },
 
     gridContainer:{
-        border: '1px green solid',
+        
     },
 
     gridItem:{
-        border: '1px red solid',
+        backgroundColor: '#fcfcfc',
         borderRadius: '1em',
-        position: 'relative',
+        boxShadow: '6px 6px 12px #cacaca, -6px -6px 12px #f6f6f6',
 
         '&:hover':{
             transform: 'scale(1.1)',
-            transition: '0.4s',
+            transition: '0.6s ease all',
         },
-
     },
 
-    blurDiv:{
-            width: 'auto',
-            height: 'auto',
-            backgroundColor: 'blue', 
-            position: 'absolute',
-            filter: 'blur(10px)',
+    headingDiv:{
+        textAlign: 'center',
+        padding: '1em 0 6em 0',
 
-        '&::before':{
-            content: '',
-            width: 'auto',
-            height: 'auto',
-            backgroundColor: 'blue', 
-            position: 'absolute',
-            filter: 'blur(10px)',
+        '@media(max-width: 600px)':{
+            padding: '1em 0',
         },
+    },
 
-        '&::after':{
-            content: '',
-            width: 'auto',
-            height: 'auto',
-            backgroundColor: 'blue', 
-            position: 'absolute',
-            filter: 'blur(10px)',
-        },
+    productHeading:{
+        fontFamily: 'Mont-Bold',
     },
 
     productWrapper:{
@@ -103,20 +92,27 @@ const useStyles = makeStyles({
         padding: '1em 0 2em 0'
     },
 
+    productHeader:{
+        fontFamily: 'SansitaSwashed'
+    },
+
     productDescriptionDiv:{
         padding: '1em 0 2em 0',
     },
 
     buyButtonDiv:{
         textAlign: 'center',
-        padding: '1em 0',
+        padding: '2em 0 1em 0',
+    },
+
+    smallDataDiv:{
+        marginTop: '1em'
     },
 
     buyButton:{   
     color: 'white',
     borderRadius: '0.5em',
     backgroundColor: '#FF2C70',
-    margin: '0 1em',
     fontFamily: 'Mont-Bold', 
     alignItems: 'center',
 
@@ -139,10 +135,16 @@ export default function Product() {
 
             <div className={classes.wrapper}>
 
+                <div className={classes.headingDiv}>
+                    <Typography variant='h4' className={classes.productHeading}>
+                        Our Packages
+                    </Typography>
+                </div>
+
                 <Grid
                     container
                     className={classes.gridContainer}
-                    justify= 'space-around'
+                    justify= 'space-evenly'
                     xs={12}
                     sm={12}
                     md={12}
@@ -164,23 +166,30 @@ export default function Product() {
                                 <div className={classes.productWrapper}>
         
                                     <div className={classes.productHeaderDiv}>
-                                        <Typography variant='h6' className={classes.productHeader}>
+                                        <Typography variant='h5' className={classes.productHeader}>
                                             {product.productName}
                                         </Typography>
                                     </div>
         
                                     <div className={classes.productDescriptionDiv}>
                                         <Typography variant='body1' className={classes.productLocation} gutterBottom>
-                                            Location: {product.location}
+                                            <strong>Description: </strong><br/>{product.description}      
                                         </Typography>
-        
-                                        <Typography variant='body1' className={classes.productPeople} gutterBottom>
-                                            People: {product.people}
-                                        </Typography>
-        
-                                        <Typography variant='body1' className={classes.productDay} gutterBottom>
-                                            Days: {product.days}
-                                        </Typography>
+
+                                        <div className={classes.smallDataDiv}>
+                                            <Typography variant='body1' className={classes.productLocation} gutterBottom>
+                                            <strong>Location: </strong>{product.location}
+                                            </Typography>
+            
+                                            <Typography variant='body1' className={classes.productPeople} gutterBottom>
+                                            <strong>People: </strong>{product.people}
+                                            </Typography>
+            
+                                            <Typography variant='body1' className={classes.productDay} gutterBottom>
+                                            <strong>Days: </strong>{product.days}
+                                            </Typography>
+                                        </div>
+                                        
                                     </div>
         
                                     <div className={classes.buyButtonDiv}>
@@ -189,7 +198,7 @@ export default function Product() {
                                             <Typography variant='body2'>
                                                 Buy Now
                                             </Typography>
-                                            <ShopIcon fontSize='small' />
+                                
                                         </Button>
                                     </div>
         
