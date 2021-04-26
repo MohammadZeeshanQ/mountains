@@ -12,7 +12,8 @@ const useStyles = makeStyles({
         padding: '5em 0',
 
         '@media (max-width: 600px)':{
-            adding: '0',
+            padding: '0',
+            border: '1px  red solid'
         }
     },
 
@@ -54,11 +55,17 @@ const useStyles = makeStyles({
     },
 
     textDiv:{
-
+        '@media (max-width: 600px)':{
+            textAlign: 'center',
+            padding: '0 1em',
+        }
     },
 
     header:{
         fontFamily: 'Mont-Bold',
+        '@media(max-width: 600px)':{
+            fontSize: '1.8em',
+        }
     },
 
     subHeader:{
@@ -73,6 +80,10 @@ const useStyles = makeStyles({
 
     buttonDiv:{
         margin: '2em 0',
+
+        '@media (max-width: 600px)':{
+            textAlign: 'center',
+        }
     },
 
     learnBtn:{
