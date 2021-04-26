@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 
         '@media (max-width: 600px)':{
             padding: '0',
-            border: '1px  red solid'
+    
         }
     },
 

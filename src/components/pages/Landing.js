@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     },
 
     wrapper:{
-        padding: '12em 0',
+        padding: '16em 0',
         
         "@media (max-width: 600px)":{
             padding: '8em 0',

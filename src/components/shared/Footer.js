@@ -80,13 +80,13 @@ export default function NavigationBar() {
 
                         <div className={classes.subHeaderDiv}>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Package 1
+                                Be One of Us
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Package 2
+                                Course
                             </Typography>
                             <Typography variant='body1' className={classes.subHeader}>
-                                Package 3
+                                Shop
                             </Typography>
 
                         </div>

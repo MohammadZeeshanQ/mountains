@@ -36,6 +36,7 @@ const useStyles = makeStyles({
     nameText:{
         color: 'white',
         fontFamily: 'Sans-Bold', 
+        fontSize: '1.8em',
 
         '@media (max-width: 600px)':{
             fontSize: '1em',
@@ -61,6 +62,8 @@ const useStyles = makeStyles({
         color: 'white',
         border: 'none',
         fontFamily: 'Mont-SemiBold', 
+        fontSize: '1.2em',
+        margin: '0 0.6em',
 
         '&:hover':{
             transform: 'scale(1.1)',

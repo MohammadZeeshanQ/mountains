@@ -55,7 +55,9 @@ const useStyles = makeStyles({
     },
 
     gridContainer:{
-        
+        '@media (max-width: 600px)':{
+            marginBottom: '5em',
+        }
     },
 
     gridItem:{
@@ -66,6 +68,10 @@ const useStyles = makeStyles({
         '&:hover':{
             transform: 'scale(1.1)',
             transition: '0.6s ease all',
+        },
+
+        '@media (max-width: 600px)':{
+            margin: '2em',
         },
     },
 
