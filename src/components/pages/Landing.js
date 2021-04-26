@@ -13,7 +13,11 @@ const useStyles = makeStyles({
     },
 
     wrapper:{
-        padding: '12em 0'
+        padding: '12em 0',
+        
+        "@media (max-width: 600px)":{
+            padding: '8em 0',
+        },
     },  
 
     BackgroundImage:{
@@ -44,14 +48,30 @@ const useStyles = makeStyles({
 
     header:{
         fontFamily: 'Mont-Bold', 
+
+        '@media (max-width: 600px)':{
+            fontSize: '2.2em',
+            margin: '1em 0 0.5em 0'
+        },
     },
 
     subHeader:{
-        fontFamily: 'Mont-SemiBold', 
+        fontFamily: 'Mont-SemiBold',
+
+        '@media (max-width: 600px)':{
+            fontSize: '1.1em',
+        }, 
     },
 
     btnContainer:{
         marginTop: '2em',
+
+        '@media (max-width: 600px)':{
+            display: 'flex',
+            flexDirection: 'column-reverse',
+            justifyContent: 'center',
+            alignItems: 'center',
+        }
     },
 
     btnLearn:{
@@ -67,6 +87,11 @@ const useStyles = makeStyles({
             transform: 'scale(1.15)',
             transition: '0.3s',
         },
+
+        '@media (max-width: 600px)':{
+           width: '12em',
+           marginTop: '1.5em'
+        }
     },  
 
     btnBuy:{
@@ -81,6 +106,10 @@ const useStyles = makeStyles({
             transform: 'scale(1.15)',
             transition: '0.3s',
         },
+
+        '@media (max-width: 600px)':{
+            width: '12em'
+         }
     },
 
 });
