@@ -43,6 +43,10 @@ const useStyles = makeStyles({
         '@media (max-width: 600px)':{
             padding: '0',
         },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            padding: '1em',
+        },
     },
 
     wrapper:{
@@ -73,6 +77,10 @@ const useStyles = makeStyles({
         '@media (max-width: 600px)':{
             margin: '2em',
         },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            margin: '1em',
+        },
     },
 
     headingDiv:{
@@ -82,10 +90,18 @@ const useStyles = makeStyles({
         '@media(max-width: 600px)':{
             padding: '1em 0',
         },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            padding: '3em 0',
+        },
     },
 
     productHeading:{
         fontFamily: 'Mont-Bold',
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '1.5em',
+        },
     },
 
     productWrapper:{
@@ -95,13 +111,35 @@ const useStyles = makeStyles({
 
     productHeaderDiv:{
         textAlign: 'center',
-        padding: '1em 0 2em 0'
+        padding: '1em 0 2em 0',
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            padding: '0',
+        },
     },
 
     productHeader:{
-        fontFamily: 'SansitaSwashed'
-    },
+        fontFamily: 'SansitaSwashed',
 
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '1.2em',
+        },
+    },
+    productLocation:{
+           "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.8em',
+        },
+    },
+    productPeople:{
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.8em',
+        },
+    },
+    productDay:{
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.8em',
+        },
+    },
     productDescriptionDiv:{
         padding: '1em 0 2em 0',
     },
@@ -109,6 +147,10 @@ const useStyles = makeStyles({
     buyButtonDiv:{
         textAlign: 'center',
         padding: '2em 0 1em 0',
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            padding: '0',
+        },
     },
 
     smallDataDiv:{

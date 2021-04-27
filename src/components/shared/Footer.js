@@ -1,6 +1,10 @@
 import React from 'react'
 import {Typography, Grid} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
+import FacebookIcon from '../assets/Icons/facebook.png';
+import InstagramIcon from '../assets/Icons/instagram.png';
+import LinkedInIcon from '../assets/Icons/linkedin.png';
+import TwitterIcon from '../assets/Icons/twitter.png';
 
 
 import AppLogo from '../assets/Icons/AppStore.png';
@@ -18,14 +22,31 @@ const useStyles = makeStyles({
 
     wrapper:{
         width: '100%',
+
+       
     },
 
     gridContainer:{
-
+        padding: '0',
+        
+        '@media (max-width:600px)':{
+            padding: '1em',
+        }
     },
 
     gridItem:{
         color: '#FFF',
+        padding: '0',
+
+        '@media (max-width:600px)':{
+            margin: '1em',
+        }
+    },
+
+    gridItemIcon:{
+        '@media (max-width:600px)':{
+            margin: '1em',
+        }
     },
 
     appLogoImage:{
@@ -43,6 +64,17 @@ const useStyles = makeStyles({
     subHeader:{
         fontFamily: 'Mont-Regular',
     },
+    headerIconDiv:{
+        textAlign: 'center'
+    },
+    socialMediaDiv:{
+        textAlign: 'center',
+        marginTop: '2em'
+    },
+    socialMediaIcons:{
+        width: '2.5em',
+        margin: '.8em'
+    }
 
 });
 
@@ -69,7 +101,7 @@ export default function NavigationBar() {
                         item
                         className={classes.gridItem}
                         xs={12}
-                        sm={4}
+                        sm={5}
                         md={2}
                     >
                         <div className={classes.headerDiv}>
@@ -98,7 +130,7 @@ export default function NavigationBar() {
                         item
                         className={classes.gridItem}
                         xs={12}
-                        sm={4}
+                        sm={5}
                         md={2}
                     >
                         <div className={classes.headerDiv}>
@@ -127,7 +159,7 @@ export default function NavigationBar() {
                         item
                         className={classes.gridItem}
                         xs={12}
-                        sm={4}
+                        sm={5}
                         md={2}
                     >
                         <div className={classes.headerDiv}>
@@ -157,7 +189,7 @@ export default function NavigationBar() {
                         item
                         className={classes.gridItem}
                         xs={12}
-                        sm={4}
+                        sm={5}
                         md={2}
                     >
                         <div className={classes.headerDiv}>
@@ -180,13 +212,19 @@ export default function NavigationBar() {
 
                     <Grid 
                         item
-                        className={classes.gridItem}
+                        className={classes.gridItemIcon}
                         xs={12}
-                        sm={4}
+                        sm={5}
                         md={2}
                     >
-                        <div className={classes.headerDiv}>
-                            <img src={AppLogo} className={classes.appLogoImage} alt='App Logo' />
+                        <div className={classes.headerIconDiv}>
+                            <a href='#'><img src={AppLogo} className={classes.appLogoImage} alt='App Logo' /></a>
+                            <div className={classes.socialMediaDiv}>
+                                <a href='#'><img src={FacebookIcon} alt='Facebook' className={classes.socialMediaIcons} /></a>
+                                <a href='#'><img src={InstagramIcon} alt='Facebook' className={classes.socialMediaIcons} /></a>
+                                <a href='#'><img src={LinkedInIcon} alt='Facebook' className={classes.socialMediaIcons} /></a>
+                                <a href='#'><img src={TwitterIcon} alt='Facebook' className={classes.socialMediaIcons} /></a>
+                            </div>
                         </div>
 
                     </Grid>

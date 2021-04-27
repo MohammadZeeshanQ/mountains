@@ -42,7 +42,11 @@ const useStyles = makeStyles({
         '@media(max-width: 600px)':{
             fontSize: '2em',
             padding: '1em',
-        }
+        },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '1.5em',
+        },
     },
 
     horizontalLine:{
@@ -50,7 +54,11 @@ const useStyles = makeStyles({
 
         '@media (max-width: 600px)':{
             width: '30%',
-        }
+        },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            width: '40%'
+        },
     }, 
 
     gridContainer:{
@@ -69,7 +77,8 @@ const useStyles = makeStyles({
 
         '@media (max-width: 600px)':{
             borderRadius: '0', 
-        }
+        },
+
     },
 
     gridItemContent:{
@@ -92,17 +101,29 @@ const useStyles = makeStyles({
 
         '@media(max-width: 600px)':{
             fontSize: '1.8em',
-        }
+        },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '1em',
+        },
     },
 
     subHeader:{
         fontFamily: 'Mont-SemiBold',
         marginTop: '1em',
         color: '#FF2C70',
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.8em',
+        },
     },
 
     description:{
         fontFamily: 'Mont-Regular',
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.75em',
+        },
     },
 
     buttonDiv:{
@@ -124,6 +145,10 @@ const useStyles = makeStyles({
             backgroundColor: '#FF2C70',
             transform: 'scale(1.15)',
             transition: '0.3s',
+        },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.7em',
         },
     }
 
@@ -185,7 +210,7 @@ export default function Mount1() {
                                 </Typography>
 
                                 <Typography variant='h6' className={classes.subHeader} gutterBottom>
-                                    CHINA – 8848M
+                                    NEPAL – 8848M
                                 </Typography>
 
                                 <Typography variant='body1' className={classes.description} gutterBottom>

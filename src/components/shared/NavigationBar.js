@@ -46,14 +46,14 @@ const useStyles = makeStyles({
     
     desktopTabContainer:{
         display: 'block',
-        '@media (max-width: 600px)':{
+        '@media (max-width: 685px)':{
             display: 'none',   
         }
     },
 
     mobileTabContainer:{
         display: 'none',
-        '@media (max-width: 600px)':{
+        '@media (max-width: 680px)':{
             display: 'block',
         },
     },

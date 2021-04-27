@@ -62,19 +62,31 @@ const useStyles = makeStyles({
 
     header:{
         fontFamily: 'Mont-Bold',
+
         '@media(max-width: 600px)':{
             fontSize: '1.8em',
-        }
+        },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '1em',
+        },
     },
 
     subHeader:{
         fontFamily: 'Mont-SemiBold',
         marginTop: '1em',
         color: '#FF2C70',
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.8em',
+        },
     },
 
     description:{
         fontFamily: 'Mont-Regular',
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.7em',
+        },
     },
 
     buttonDiv:{
@@ -96,6 +108,10 @@ const useStyles = makeStyles({
             backgroundColor: '#FF2C70',
             transform: 'scale(1.15)',
             transition: '0.3s',
+        },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.75em',
         },
     }
 

@@ -18,6 +18,11 @@ const useStyles = makeStyles({
         "@media (max-width: 600px)":{
             padding: '8em 0',
         },
+
+         
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            padding: '8em 0',
+        },
     },  
 
     BackgroundImage:{
@@ -53,6 +58,10 @@ const useStyles = makeStyles({
             fontSize: '2.2em',
             margin: '1em 0 0.5em 0'
         },
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '3em',
+        },
     },
 
     subHeader:{
@@ -61,6 +70,10 @@ const useStyles = makeStyles({
         '@media (max-width: 600px)':{
             fontSize: '1.1em',
         }, 
+
+        "@media (min-width: 650px) and (max-width: 900px)":{
+            fontSize: '.8em',
+        },
     },
 
     btnContainer:{
